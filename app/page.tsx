@@ -11,6 +11,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
         <Approach />
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </div>
     </main>
   );
