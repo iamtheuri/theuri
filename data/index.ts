@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -45,7 +45,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "I design websites & develop systems",
+    title: "I design websites & develop web apps",
     description: "Brief overview",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -69,65 +69,65 @@ export const projects = [
   {
     id: 1,
     title: "Property MS",
-    des: "Full Stack Laravel Web Application that simplifies property management for landlords, and where tenants can also their own spaces separately ",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    des: "Full Stack Responsive Web Application simplifying property management for landlords and tenants.",
+    img: "/propertyms.png",
+    iconLists: ["/laravel.svg", "/tail.svg", "/dock.svg"],
+    link: "Link available on request",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Queen Dee Weddings",
+    des: "Website for a photography studio specializing in weddings.",
+    img: "/qd-weddings.png",
+    iconLists: ["/laravel.svg", "/bootstrap.svg", "dock.svg"],
+    link: "Link available on request",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Erevuka",
+    des: "Helped the development team in the project as an intern at Farwell Innovations Limited.",
+    img: "/erevuka.png",
+    iconLists: ["/laravel.svg", "dock.svg"],
+    link: "Link available on request",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Meal Ordering App",
+    des: "NextJs App to order meals from the comfort of your room.",
+    img: "/Meal-ordering-app.png",
+    iconLists: ["/next.svg", "/app.svg", "/material-ui.svg", "/tail.svg", "/re.svg"],
+    link: "Link available on request",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -181,31 +181,34 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineer Intern",
+    desc: "Comtel Integrators Africa - Assisted in the development of a web-based platform using React(NextJs) & Appwrite(BaaS), testing API endpoints, unit tests, code optimization, & maintaining the company's website & designs.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Web-Developer Intern",
+    desc: "Farwell Innovations Limited - Assisted the development team in development of two web based platforms using Laravel & customer support.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    title: "BSC Computer Science",
+    desc: "Multimedia University of Kenya, Nairobi | AUGUST 2021 - APRIL 2025 | Ongoing",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    id: 2,
+    title: "Secondary Education",
+    desc: "Utumishi Boys Academy | JANUARY 2017 - APRIL 2021 | KCSE: A- ",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];
 
