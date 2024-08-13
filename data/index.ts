@@ -28,7 +28,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
+    title: "Tech stack",
     description: "FullStack, QA, Git, SQL",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     titleClassName: "justify-center",
@@ -69,7 +69,7 @@ export const projects = [
   {
     id: 1,
     title: "Property MS",
-    des: "Full Stack Responsive Web Application simplifying property management for landlords and tenants.",
+    des: "Full-stack, responsive web platform streamlining property management for landlords and tenants.",
     img: "/propertyms.png",
     iconLists: ["/laravel.svg", "/tail.svg", "/dock.svg"],
     link: "Link available on request",
@@ -77,7 +77,7 @@ export const projects = [
   {
     id: 2,
     title: "Queen Dee Weddings",
-    des: "Website for a photography studio specializing in weddings.",
+    des: "Showcase website for a wedding photography studio.",
     img: "/qd-weddings.png",
     iconLists: ["/laravel.svg", "/bootstrap.svg", "dock.svg"],
     link: "Link available on request",
@@ -85,15 +85,15 @@ export const projects = [
   {
     id: 3,
     title: "Erevuka",
-    des: "Helped the development team in the project as an intern at Farwell Innovations Limited.",
+    des: "Contributed to development as an intern at Farwell Innovations Limited.",
     img: "/erevuka.png",
-    iconLists: ["/laravel.svg", "dock.svg"],
+    iconLists: ["/laravel.svg", "/bootstrap.svg", "dock.svg"],
     link: "Link available on request",
   },
   {
     id: 4,
     title: "Meal Ordering App",
-    des: "NextJs App to order meals from the comfort of your room.",
+    des: "Responsive NextJS application for convenient in-room meal ordering.",
     img: "/Meal-ordering-app.png",
     iconLists: ["/next.svg", "/app.svg", "/material-ui.svg", "/tail.svg", "/re.svg"],
     link: "Link available on request",

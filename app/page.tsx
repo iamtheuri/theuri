@@ -26,8 +26,8 @@ const Home = () => {
         <Education />
         <Approach />
         <Footer />
-        <SpeedInsights />
-        <Analytics />
+        {/* <SpeedInsights /> */}
+        {/* <Analytics /> */}
       </div>
     </main>
   );
