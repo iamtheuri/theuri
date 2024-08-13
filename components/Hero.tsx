@@ -3,15 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { IoMdCloudDownload } from "react-icons/io";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
-const downloadResume = () => {
-  const pdfUrl = "theuris_resume.pdf";
-  const link = document.createElement("a");
-  link.href = pdfUrl;
-  link.download = "theuris_resume.pdf";
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-};
+
 
 const Hero = () => {
   return (
@@ -50,13 +42,11 @@ const Hero = () => {
             words="Kenyan Based Web Developer"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-          <button onClick={downloadResume}>
             <MagicButton
               title="Download Resume"
               icon={<IoMdCloudDownload />}
               position="right"
             />
-        </button>
         </div>
       </div>
     </div>
