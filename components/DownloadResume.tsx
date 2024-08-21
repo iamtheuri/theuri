@@ -1,22 +1,30 @@
 import React from "react";
 
-const MagicButton = ({
+const downloadResume = () => {
+  const pdfUrl = "theuris_resume.pdf";
+  const link = document.createElement("a");
+  link.href = pdfUrl;
+  link.download = "theuris_resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+const DownloadResume = ({
   title,
   icon,
   position,
-  handleClick,
   otherClasses,
 }: {
   title: string;
   icon: React.ReactNode;
   position: string;
-  handleClick?: () => void;
   otherClasses?: string;
 }) => {
   return (
     <button
-      className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none motion-safe:animate-bounce"
-      onClick={handleClick}
+      className="relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-lg p-[1px] focus:outline-none animate-bounce"
+      onClick={downloadResume}
     >
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 
@@ -31,4 +39,4 @@ const MagicButton = ({
   );
 };
 
-export default MagicButton;
+export default DownloadResume;

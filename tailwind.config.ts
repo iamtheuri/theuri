@@ -16,6 +16,9 @@ const config = {
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
   ],
+  variants: {
+    animation: ['responsive', 'motion-safe', 'motion-reduce']
+  },
   prefix: "",
   theme: {
     container: {
