@@ -1,3 +1,36 @@
+import MealOrderingApp from "../public/Meal-ordering-app.png"
+import QueenDeeWeddings from "../public/qd-weddings.png"
+import LaravelName from "../public/laravelName.svg"
+import MaterialUi from "../public/material-ui.svg"
+import WorkExperienceTwo from "../public/exp4.svg"
+import WorkExperienceOne from "../public/exp1.svg"
+import GridBackgroundFour from "../public/b4.svg"
+import GridBackgroundFive from "../public/b5.svg"
+import PropertyMs from "../public/propertyms.png"
+import SentryName from "../public/sentryName.svg"
+import DockerName from "../public/dockerName.svg"
+import NextJsName from "../public/nextJsName.svg"
+import AppwriteName from "../public/appName.svg"
+import GridBackgroundOne from "../public/b1.svg"
+import NginxName from "../public/nginxName.svg"
+import Bootstrap from "../public/bootstrap.svg"
+import EducationOne from "../public/exp3.svg"
+import EducationTwo from "../public/exp2.svg"
+import Laravel from "../public/laravel.svg"
+import Erevuka from "../public/erevuka.png"
+import NextJs from "../public/nextJs.svg"
+import Tailwind from "../public/tail.svg"
+import Sentry from "../public/sentry.svg"
+import LinkedIn from "../public/link.svg"
+import Appwrite from "../public/app.svg"
+import Twitter from "../public/twit.svg"
+import Docker from "../public/dock.svg"
+import Nginx from "../public/nginx.svg"
+import GitHub from "../public/git.svg"
+import Grid from "../public/grid.svg"
+import Next from "../public/next.svg"
+import React from "../public/re.svg"
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -8,12 +41,12 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Self-driven, individual committed to  delivering client expectations",
+    title: "Strong advocate for continual growth, reliable team-member",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: GridBackgroundOne,
     spareImg: "",
   },
   {
@@ -39,8 +72,8 @@ export const gridItems = [
     description: "Web-Development Internships",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: Grid,
+    spareImg: GridBackgroundFour,
   },
 
   {
@@ -50,8 +83,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: GridBackgroundFive,
+    spareImg: Grid,
   },
   {
     id: 6,
@@ -70,66 +103,33 @@ export const projects = [
     id: 1,
     title: "Property MS",
     des: "Full-stack, responsive web platform streamlining property management for landlords and tenants.",
-    img: "/propertyms.png",
-    iconLists: ["/laravel.svg", "/tail.svg", "/dock.svg"],
+    img: PropertyMs,
+    iconLists: [Laravel, Tailwind, Docker],
     link: "Link available on request",
   },
   {
     id: 2,
     title: "Queen Dee Weddings",
     des: "Showcase website for a wedding photography studio.",
-    img: "/qd-weddings.png",
-    iconLists: ["/laravel.svg", "/bootstrap.svg", "dock.svg"],
+    img: QueenDeeWeddings,
+    iconLists: [Laravel, Bootstrap, Docker],
     link: "Link available on request",
   },
   {
     id: 3,
     title: "Erevuka",
     des: "Contributed to development as an intern at Farwell Innovations Limited.",
-    img: "/erevuka.png",
-    iconLists: ["/laravel.svg", "/bootstrap.svg", "dock.svg"],
+    img: Erevuka,
+    iconLists: [Laravel, Bootstrap, Docker],
     link: "Link available on request",
   },
   {
     id: 4,
     title: "Meal Ordering App",
     des: "Responsive NextJS application for convenient in-room meal ordering.",
-    img: "/Meal-ordering-app.png",
-    iconLists: ["/next.svg", "/app.svg", "/material-ui.svg", "/tail.svg", "/re.svg"],
+    img: MealOrderingApp,
+    iconLists: [Next, Appwrite, MaterialUi, Tailwind, React],
     link: "Link available on request",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with David was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. David's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, David is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
   },
 ];
 
@@ -137,44 +137,38 @@ export const companies = [
   {
     id: 1,
     name: "LARAVEL",
-    img: "/laravel.svg",
-    nameImg: "/laravelName.svg",
+    img: Laravel,
+    nameImg: LaravelName,
   },
   {
     id: 2,
     name: "NGINX",
-    img: "/nginx.svg",
-    nameImg: "/nginxName.svg",
+    img: Nginx,
+    nameImg: NginxName,
   },
   {
     id: 3,
     name: "nextJs",
-    img: "/nextJs.svg",
-    nameImg: "/nextJsName.svg",
+    img: NextJs,
+    nameImg: NextJsName,
   },
   {
     id: 4,
     name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    img: Appwrite,
+    nameImg: AppwriteName,
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    img: Docker,
+    nameImg: DockerName,
   },
   {
     id: 6,
     name: "SENTRY",
-    img: "/sentry.svg",
-    nameImg: "/sentryName.svg",
-  },
-  {
-    id: 7,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: Sentry,
+    nameImg: SentryName,
   },
 ];
 
@@ -182,16 +176,16 @@ export const workExperience = [
   {
     id: 1,
     title: "Software Engineer Intern",
-    desc: "Comtel Integrators Africa - Assisted in the development of a web-based platform using React(NextJs) & Appwrite(BaaS), testing API endpoints, unit tests, code optimization, & maintaining the company's website & designs.",
+    desc: "Comtel Integrators Africa - Assisted in the development of a web-based platform using React(NextJs) & Appwrite(BaaS), testing API endpoints, unit tests, code optimization, & maintaining, updating, and upgrading the company's website & designs.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: WorkExperienceOne,
   },
   {
     id: 2,
     title: "Web-Developer Intern",
-    desc: "Farwell Innovations Limited - Assisted the development team in development of two web based platforms using Laravel & customer support.",
+    desc: "Farwell Innovations Limited - Assisted the development team in development of web based platforms and maintainance.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: WorkExperienceTwo,
   },
 ];
 
@@ -201,31 +195,31 @@ export const education = [
     title: "BSC Computer Science",
     desc: "Multimedia University of Kenya, Nairobi | AUGUST 2021 - APRIL 2025 | Ongoing",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: EducationTwo,
   },
   {
     id: 2,
     title: "Secondary Education",
     desc: "Utumishi Boys Academy | JANUARY 2017 - APRIL 2021 | KCSE: A- ",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: EducationOne,
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: GitHub,
     link: "https://github.com/iamtheuri",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: Twitter,
     link: "https://x.com/iamtheuri_",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: LinkedIn,
     link: "https://www.linkedin.com/in/iamtheuri",
   },
 ];

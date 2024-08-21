@@ -1,11 +1,12 @@
-import { useState } from "react";
-import { IoCopyOutline } from "react-icons/io5";
-import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import Lottie from "react-lottie";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
+import { IoCopyOutline } from "react-icons/io5";
 import MagicButton from "../MagicButton";
+import GridGlobe from "./GridGlobe";
+import Lottie from "react-lottie";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 export const BentoGrid = ({
   className,
@@ -34,6 +35,8 @@ export const BentoGridItem = ({
   imgClassName,
   titleClassName,
   spareImg,
+  priority = false,
+
 }: {
   className?: string;
   id: number;
@@ -43,6 +46,8 @@ export const BentoGridItem = ({
   imgClassName?: string;
   titleClassName?: string;
   spareImg?: string;
+  priority?: boolean;
+
 }) => {
   const leftLists = ["Python", "Laravel", "Wordpress", "React"];
   const rightLists = ["Git", "MySQL", "MongoDB", "Linux"];
@@ -79,11 +84,11 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={img}
               className={cn(imgClassName, "object-cover object-center")}
-              loading="lazy" // Lazy loading added here
+              loading="lazy"
             />
           )}
         </div>
@@ -93,11 +98,11 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={spareImg}
               className="object-cover object-center w-full h-full"
-              loading="lazy" // Lazy loading added here
+              loading="lazy"
             />
           )}
         </div>

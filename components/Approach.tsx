@@ -1,6 +1,6 @@
-import React from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 
 const Approach = () => {
   return (

@@ -1,7 +1,7 @@
+import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { IoMdCloudDownload } from "react-icons/io";
 import DownloadResume from "./DownloadResume";
 import { Spotlight } from "./ui/Spotlight";
-import { IoMdCloudDownload } from "react-icons/io";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (

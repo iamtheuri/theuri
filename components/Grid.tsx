@@ -1,10 +1,10 @@
-import { gridItems } from "@/data";
 import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
+import { gridItems } from "@/data";
 
 const Grid = () => {
   return (
     <section id="about">
-      <BentoGrid className="w-full py-20">
+      <BentoGrid className="w-full xs:py-2 lg:py-20 sm:py-4">
         {gridItems.map((item, i) => (
           <BentoGridItem
             id={item.id}
@@ -16,6 +16,7 @@ const Grid = () => {
             imgClassName={item.imgClassName}
             titleClassName={item.titleClassName}
             spareImg={item.spareImg}
+            priority={item.id === 1}
           />
         ))}
       </BentoGrid>
