@@ -8,29 +8,21 @@ import dynamic from "next/dynamic";
 import { navItems } from "@/data";
 import "@/styles/global.css";
 
-const DynamicHero = dynamic(() => import("@/components/Hero"), {
-  loading: () => <HeroSkeleton />,
-});
-const DynamicGrid = dynamic(() => import("@/components/Grid"), {
-  loading: () => <GridSkeleton />,
-});
-const DynamicRecentProjects = dynamic(() => import("@/components/RecentProjects"), {
-  loading: () => <RecentProjectsSkeleton />,
-});
-const DynamicExperience = dynamic(() => import("@/components/Experience"), {
-  loading: () => <ExperienceSkeleton />,
-});
-const DynamicEducation = dynamic(() => import("@/components/Education"), {
-  loading: () => <EducationSkeleton />,
-});
-const DynamicApproach = dynamic(() => import("@/components/Approach"), {
-  loading: () => <ApproachSkeleton />,
-});
-const DynamicFooter = dynamic(() => import("@/components/Footer"));
+const DynamicHero = dynamic(() => import("@/components/Hero"), { loading: () => <HeroSkeleton />});
+const DynamicGrid = dynamic(() => import("@/components/Grid"), { loading: () => <GridSkeleton />});
+const DynamicRecentProjects = dynamic(() => import("@/components/RecentProjects"), {loading: () => <DefaultSkeleton />});
+const DynamicExperience = dynamic(() => import("@/components/Experience"), { loading: () => <DefaultSkeleton />});
+const DynamicEducation = dynamic(() => import("@/components/Education"), {loading: () => <DefaultSkeleton />});
+const DynamicApproach = dynamic(() => import("@/components/Approach"), {loading: () => <DefaultSkeleton />});
+const DynamicFooter = dynamic(() => import("@/components/Footer"), {loading: () => <DefaultSkeleton />});
 
 function HeroSkeleton() {
   return (
-    <div className="w-full h-1/2 bg-gray-300 dark:bg-gray-800 animate-pulse mt-8" />
+    <div className="py-24">
+      <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-20" />
+      <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-4" />
+      <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-4" />
+    </div>
   );
 }
 
@@ -48,7 +40,7 @@ function GridSkeleton() {
   );
 }
 
-function RecentProjectsSkeleton() {
+function DefaultSkeleton() {
   return (
     <div className="grid grid-cols-1 pt-4 xl:mt-12 xl:gap-12 gap-8">
       <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-800"></div>
@@ -56,43 +48,15 @@ function RecentProjectsSkeleton() {
   );
 }
 
-function ExperienceSkeleton() {
-  return (
-    <div className="grid grid-cols-1 pt-4 xl:mt-12 xl:gap-12 gap-8">
-      <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-800"></div>
-    </div>  
-  );
-}
-
-function EducationSkeleton() {
-  return (
-    <div className="grid grid-cols-1 pt-4 xl:mt-12 xl:gap-12 gap-8">
-      <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-800"></div>
-    </div>  
-  );
-}
-
-function ApproachSkeleton() {
-  return (
-    <div className="grid grid-cols-1 pt-4 xl:mt-12 xl:gap-12 gap-8">
-      <div className="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-800"></div>
-    </div>  
-  );
-}
 
 function LoadingState() {
   return (
     <section>
       <div className="container px-6 py-10 mx-auto animate-pulse">
-        <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-20" />
-        <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-4" />
-        <div className="w-full h-2 mx-auto bg-gray-200 rounded dark:bg-gray-700 mt-4" />
         <HeroSkeleton />
         <GridSkeleton />
-        <RecentProjectsSkeleton />
-        <ExperienceSkeleton />
-        <EducationSkeleton />
-        <ApproachSkeleton />
+        <DefaultSkeleton />
+        <DefaultSkeleton />
       </div>
     </section>
   );
