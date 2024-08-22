@@ -3,6 +3,7 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
+import TechStack from "@/components/TechStack";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { navItems } from "@/data";
@@ -11,6 +12,7 @@ import "@/styles/global.css";
 const DynamicHero = dynamic(() => import("@/components/Hero"), { loading: () => <HeroSkeleton />});
 const DynamicGrid = dynamic(() => import("@/components/Grid"), { loading: () => <GridSkeleton />});
 const DynamicRecentProjects = dynamic(() => import("@/components/RecentProjects"), {loading: () => <DefaultSkeleton />});
+const DynamicTechStack = dynamic(() => import("@/components/TechStack"), {loading: () => <DefaultSkeleton />});
 const DynamicExperience = dynamic(() => import("@/components/Experience"), { loading: () => <DefaultSkeleton />});
 const DynamicEducation = dynamic(() => import("@/components/Education"), {loading: () => <DefaultSkeleton />});
 const DynamicApproach = dynamic(() => import("@/components/Approach"), {loading: () => <DefaultSkeleton />});
@@ -84,6 +86,7 @@ const Home = () => {
             <DynamicHero />
             <DynamicGrid />
             <DynamicRecentProjects />
+            <DynamicTechStack />
             <DynamicExperience />
             <DynamicEducation />
             <DynamicApproach />
