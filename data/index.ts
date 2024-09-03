@@ -62,8 +62,8 @@ export const gridItems = [
   {
     id: 3,
     title: "Tech stack",
-    description: "FullStack, QA, Git, SQL",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    description: "Backend, Frontend, QA, Version-Control, DBMS",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 select-none",
     titleClassName: "justify-center",
   },
   {
@@ -78,7 +78,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "I design websites & develop web apps",
+    title: "I convert coffee into software",
     description: "Brief overview",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",

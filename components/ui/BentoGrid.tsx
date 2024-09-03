@@ -50,7 +50,7 @@ export const BentoGridItem = ({
 
 }) => {
   const leftLists = ["Python", "Laravel", "Wordpress", "React"];
-  const rightLists = ["Git", "MySQL", "MongoDB", "Linux"];
+  const rightLists = ["MySQL", "NoSQL", "Linux", "Git"];
 
   const [copied, setCopied] = useState(false);
 

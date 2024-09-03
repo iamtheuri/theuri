@@ -3,7 +3,6 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/react';
-import TechStack from "@/components/TechStack";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { navItems } from "@/data";
@@ -49,7 +48,6 @@ function DefaultSkeleton() {
     </div>  
   );
 }
-
 
 function LoadingState() {
   return (
