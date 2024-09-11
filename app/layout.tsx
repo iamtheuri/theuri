@@ -6,11 +6,16 @@ import { ThemeProvider } from "./provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const GOOGLE_SITE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION;
+const APP_URL = process.env.APP_URL;
+const FAVICON_URL = process.env.FAVICON_URL;
+const SCHEMA_URL = process.env.SCHEMA_URL;
+
  const structuredData = {
-    "@context": "https://schema.org",
+    "@context": SCHEMA_URL,
     "@type": "Person",
     "name": "Theuri",
-    "url": "https://your-portfolio-url.com",
+    "url": APP_URL,
     "sameAs": [
       "https://x.com/iamtheuri_",
       "https://github.com/iamtheuri",
@@ -28,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Theuri | Web Developer",
     description: "Theuri is a web developer specializing in Laravel and React. View my projects and skills.",
-    url: "https://theuri.vercel.app/",
+    url: APP_URL,
     siteName: "Theuri's Portfolio",
     locale: "en_US",
     type: "website",
@@ -49,10 +54,10 @@ export const metadata: Metadata = {
     title: "Theuri's Portfolio | Web Developer",
     description: "Theuri is a web developer specializing in Next.js and React. View my projects and skills.",
     creator: "@iamtheuri_",
-    images: ["https://iamtheuri.netlify.app/anonymous.ico"],
+    images: [],
   },
   verification: {
-    google: "SHGcRcHadllt4P0if1I_XD_Fzay0gdq_Z_LYK7JgWuk",
+    google: GOOGLE_SITE_VERIFICATION,
   },
 };
 
@@ -64,7 +69,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="https://iamtheuri.netlify.app/anonymous.ico" sizes="any" />
+        <link rel="icon" href={FAVICON_URL} sizes="any" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
