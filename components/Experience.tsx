@@ -5,7 +5,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full" id="experience">
+    <section className="py-20 w-full" id="experience">
       <h1 className="heading">
         <span className="text-purple">Experience</span>
       </h1>
@@ -42,7 +42,7 @@ const Experience = () => {
           </Button>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

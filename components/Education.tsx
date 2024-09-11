@@ -5,7 +5,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <div className="py-20 w-full">
+    <section className="py-20 w-full" id="education">
       <h1 className="heading">
         <span className="text-purple">Education</span>
       </h1>
@@ -42,7 +42,7 @@ const Education = () => {
           </Button>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

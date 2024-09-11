@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "deploy": "vercel --prod"
   },
   "dependencies": {
@@ -39,9 +40,11 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/react-lottie": "^1.2.10",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
     "autoprefixer": "^10.0.1",
-    "eslint": "^9.8.0",
-    "eslint-config-next": "14.2.5",
+    "eslint": "^9.10.0",
+    "eslint-config-next": "^14.2.9",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
