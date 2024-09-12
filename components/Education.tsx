@@ -5,7 +5,7 @@ import React from "react";
 
 const Education = () => {
   return (
-    <section className="py-20 w-full" id="education">
+    <section className="py-4 w-full" id="education">
       <h1 className="heading">
         <span className="text-purple">Education</span>
       </h1>

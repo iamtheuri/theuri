@@ -6,21 +6,21 @@ import React from "react";
 
 const TechStack = () => {
   return (
-    <section id="stack" className="py-20 sm:py-0">
-      <div className="flex flex-col items-center max-lg:mt-10">
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
+    <section id="stack" className="py-8 sm:py-12 md:py-16 lg:py-20">
+      <div className="flex flex-col items-center">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-16">
           {companies.map((company) => (
             <React.Fragment key={company.id}>
-              <div className="flex md:max-w-60 max-w-32 gap-2">
+              <div className="flex max-w-32 md:max-w-60 gap-2 items-center">
                 <Image
-                  className="md:w-10 w-5"
+                  className="w-4 sm:w-5 md:w-8 lg:w-10"
                   alt={company.name}
                   src={company.img}
                   loading="lazy"
                 />
                 <Image
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
-                  className="md:w-24 w-20"
+                  className="w-16 sm:w-18 md:w-20 lg:w-24"
                   src={company.nameImg}
                   alt={company.name}
                   loading="lazy"
