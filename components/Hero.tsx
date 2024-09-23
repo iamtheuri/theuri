@@ -34,7 +34,7 @@ const Hero = () => {
           </p>
           <TextGenerateEffect
             words="Kenyan Based Web Developer"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] sm:text-2xl md:text-5xl lg:text-6xl"
           />
             <DownloadResume
               title="Download Resume"
