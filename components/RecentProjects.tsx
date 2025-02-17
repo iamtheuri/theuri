@@ -28,7 +28,7 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <Image src={BackgroundImage} alt={item.title} loading="lazy"/>
+                  <Image src={BackgroundImage} alt={item.title} loading="lazy" />
                 </div>
                 <Image
                   src={item.img}
@@ -66,12 +66,17 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
+                <a
+                  href={item.linkUrl}
+                  className="flex justify-center items-center"
+                >
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
                     {item.link}
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                  {item.linkUrl !== '#' ?
+                    <FaLocationArrow className="ms-3" color="#CBACF9" /> : ''
+                  }
+                </a>
               </div>
             </PinContainer>
           </div>

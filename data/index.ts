@@ -28,7 +28,10 @@ import Docker from "../public/dock.svg"
 import Nginx from "../public/nginx.svg"
 import GitHub from "../public/git.svg"
 import Grid from "../public/grid.svg"
-import Next from "../public/next.svg"
+import Blockforge from "../public/blockforge.png"
+import PharmacyPOS from "../public/pharmacy_pos.png"
+import AstroJsIcon from "../public/astro-icon-light-gradient.svg"
+import AstroJsLogoName from "../public/astro-logo-name-light-gradient.png"
 import React from "../public/re.svg"
 
 export const navItems = [
@@ -105,31 +108,53 @@ export const projects = [
     des: "Full-stack, responsive web platform streamlining property management for landlords and tenants.",
     img: PropertyMs,
     iconLists: [Laravel, Tailwind, Docker],
-    link: "Link available on request",
+    link: "Overview",
+    linkUrl: "https://www.youtube.com/watch?v=xeA4-A9sxVY&t=8s",
   },
   {
     id: 2,
     title: "Queen Dee Weddings",
     des: "Showcase website for a wedding photography studio.",
     img: QueenDeeWeddings,
-    iconLists: [Laravel, Bootstrap, Docker],
-    link: "Link available on request",
+    iconLists: [Bootstrap, Docker],
+    link: "",
+    linkUrl: "#",
   },
   {
     id: 3,
     title: "Erevuka",
     des: "Contributed to development as an intern at Farwell Innovations Limited.",
     img: Erevuka,
-    iconLists: [Laravel, Bootstrap, Docker],
-    link: "Link available on request",
+    iconLists: [],
+    link: "",
+    linkUrl: "#",
   },
   {
     id: 4,
     title: "Meal Ordering App",
     des: "Responsive NextJS application for convenient in-room meal ordering.",
     img: MealOrderingApp,
-    iconLists: [Next, Appwrite, MaterialUi, Tailwind, React],
-    link: "Link available on request",
+    iconLists: [],
+    link: "",
+    linkUrl: "#",
+  },
+  {
+    id: 5,
+    title: "Blockforge",
+    des: "Responsive hobby project built to learn more about AstroJs",
+    img: Blockforge,
+    iconLists: [AstroJsIcon, React, Tailwind],
+    link: "View site",
+    linkUrl: "https://theuris-blockchain.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Pharmacy POS",
+    des: "Ongoing pharmacy point of sale project to help in inventory management and automate re-ordering",
+    img: PharmacyPOS,
+    iconLists: [Laravel, React, Tailwind],
+    link: "",
+    linkUrl: "#",
   },
 ];
 
@@ -170,13 +195,19 @@ export const companies = [
     img: Sentry,
     nameImg: SentryName,
   },
+  {
+    id: 6,
+    name: "ASTROJS",
+    img: AstroJsIcon,
+    nameImg: AstroJsLogoName,
+  },
 ];
 
 export const workExperience = [
   {
     id: 1,
     title: "Software Engineer Intern",
-    desc: "Comtel Integrators Africa - Assisted in the development of a web-based platform using React(NextJs) & Appwrite(BaaS), testing API endpoints, unit tests, code optimization, & maintaining, updating, and upgrading the company's website & designs.",
+    desc: "Comtel Integrators Africa - Assisted in the development of web-based platforms using React(NextJs) & Appwrite(BaaS), testing API endpoints, unit tests, user-tests, code optimization, & maintaining, updating, and upgrading the company's website & designs.",
     className: "md:col-span-2",
     thumbnail: WorkExperienceOne,
   },
